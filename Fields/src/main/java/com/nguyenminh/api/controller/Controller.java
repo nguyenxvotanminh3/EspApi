@@ -62,7 +62,7 @@ private MoistureService moistureService;
 		moistureService.save(theMoisture);
 		return theMoisture;
 	} */
-	@PostMapping("/updatedetail")
+	@GetMapping("/updatedetail")
 	public Moisture addMoisture(@RequestParam("field1") String field1) {
 	    Moisture theMoisture = new Moisture();
 	   
