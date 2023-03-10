@@ -1,4 +1,4 @@
-/*package com.nguyenminh.api;
+package com.nguyenminh.api;
 
 import org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -18,5 +18,4 @@ public class WebConfig implements WebMvcConfigurer {
 			.allowedMethods("GET", "POST", "PUT", "DELETE")
             .allowedHeaders("*")
             .maxAge(3600); }
-	}
-*/
+	
