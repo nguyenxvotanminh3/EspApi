@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 	
 @Entity
-@Table(name = "new_table")
+@Table(name = "table1")
 	public class Moisture{
 		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
