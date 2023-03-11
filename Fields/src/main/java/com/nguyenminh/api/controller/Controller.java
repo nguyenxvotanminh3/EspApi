@@ -52,7 +52,7 @@ private MoistureService moistureService;
 		return theMoisture;
 }  */
 	// add new moisture 
-	 @PostMapping("/updatedetail")
+	/* @PostMapping("/updatedetail")
 	public Moisture addMoisture(@RequestBody Moisture theMoisture) {
 		// set id to 0 
 		
@@ -61,7 +61,7 @@ private MoistureService moistureService;
 		theMoisture.setEntryId(0);
 		moistureService.save(theMoisture);
 		return theMoisture;
-	} 
+	} */
 	/*@GetMapping("/updatedetail")
 	public Moisture addMoisture(@RequestParam("field1") String field1) {
 	    Moisture theMoisture = new Moisture();
@@ -72,10 +72,11 @@ private MoistureService moistureService;
 	    return theMoisture;
 	} */
 	//update moisture
-	@PutMapping("/updatedetail")
+	@PostMapping("/updatedetail")
 	public Moisture updateMoisture(@RequestParam("field1") String field1) {
 		Moisture theMoisture = new Moisture();
 		theMoisture.setField1(field1);
+		theMoisture.setEntryId(0);
 		moistureService.save(theMoisture);
 		return theMoisture;
 	}
