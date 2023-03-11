@@ -73,7 +73,9 @@ private MoistureService moistureService;
 	} */
 	//update moisture
 	@PutMapping("/updatedetail")
-	public Moisture updateMoisture(@RequestBody Moisture theMoisture) {
+	public Moisture updateMoisture(@RequestParam("field1") String field1) {
+		Moisture theMoisture = new Moisture();
+		theMoisture.setField1(field1);
 		moistureService.save(theMoisture);
 		return theMoisture;
 	}
